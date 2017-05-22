@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>Lasgidi Carriers</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
     <link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/52e8dbd3d4.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script>
+    $(function () {
+        var austDay = new Date();
+        austDay = new Date(austDay.getFullYear() + 0, 7 - 1, 22);
+        $('#defaultCountdown').countdown({until: austDay});
+        $('#year').text(austDay.getFullYear());
+    });
+    </script>
     <style>
         .number{
             border: dashed 20px;
@@ -45,8 +56,8 @@
         <div class="row"> 
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
-                <h2 class="text-center">This Site is Under <strong style="color: red">Construction!</strong><br>Please chesck back in:</h2>
-                <P class="number">60 DAYS</P> 
+                <h2 class="text-center">This Site is Under <strong style="color: red">Construction!</strong><br>Please check back in:</h2>
+                <div id="defaultCountdown"></div> 
             </div>
         </div>
     </div>
