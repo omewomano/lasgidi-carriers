@@ -1,4 +1,16 @@
 /* jQuery Countdown styles 2.0.0. */
+body{
+	background-image: url("../logo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;background-position: 0px 33px;
+	color: #000;
+}
+.container{
+	margin-top: 60px;
+	background-color: rgba(255, 255, 255, 0.4)
+
+}
+
 .is-countdown {
 	border: 1px dashed #ccc;
 	color: #fff;
@@ -6,10 +18,14 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-size: 250%;
-
-	background-image: url("../bimg.jpg")
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, black); /* Standard syntax */
 
 }
+
 
 .countdown-rtl {
 	direction: rtl;
