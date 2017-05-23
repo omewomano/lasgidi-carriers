@@ -1,17 +1,23 @@
 /* jQuery Countdown styles 2.0.0. */
-body{
-	background-image: url("../logo.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;background-position: 0px 33px;
-	color: #000;
-	
+html, body {
+	height: 100%;
+    margin: 0;
+	background: url(../logo.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  
 }
-.con{
-	margin-top: 20px;
-	background-color: rgba(255, 255, 255, 0.4);
-	height: 650px;
-	padding-left: 4px;
 
+address, h2{
+	text-shadow: 1px 1px #fff;
+	color: #000
+	}
+
+.con{
+	background-color: rgba(255, 255, 255, 0.4);
+	min-height: 100%;
 }
 
 .header{
